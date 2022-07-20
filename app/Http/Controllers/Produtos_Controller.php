@@ -14,7 +14,9 @@ class Produtos_Controller extends Controller
      */
     public function index()
     {
-       return view('produtos');
+      $data = Post::latest()->paginate(5);
+
+    return view('produtos.index',compact('data'))->with('i',(request()->input('page', 1)-1)*5);
     }
 
     /**

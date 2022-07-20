@@ -18,7 +18,7 @@
 
                 background-color: #000;
             }
-            .container-table{
+            .container-table {
                 background-color: #fff;
                 padding: 10px 10px;
                 border-radius: 5px;
@@ -28,24 +28,37 @@
                 border: 2px solid;
                 padding: 10px;
                 font-size: 20px;
-            }
-            th{
+                text-align:center
             }
         </style>
        
 </head>
 <body >
     <div class="container-table">
-        <h1>Podutos</h1>
         <table>
-            <tr>
-            <th>id</th>
-            <th>código do produto</th>
-            <th>descrição</th>
-            <th>quantidade</th>
-            <th>valor unitário</th>
-            </tr>
+            <h1>Podutos</h1>
+            <div class="container-cluna1">
+                <tr>
+                <th>id</th>
+                <th>código do produto</th>
+                <th>descrição</th>
+                <th>quantidade</th>
+                <th>valor unitário</th>
+                </tr>
+            </div>
+            <div class="container-cluna2">
+                <tr>
+                <th>1</th>
+                <th>85007743535</th>
+                <th>Água</th>
+                <th>4 unidades</th>
+                <th>2,00</th>
+                </tr>
+            </div>
         </table>
+        <button>Adicionar</button>
+        <button>Atualizar</button>
+        <button>Deletar</button>
     </div>
 </body>
 </html>
